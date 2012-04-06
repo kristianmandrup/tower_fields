@@ -5,6 +5,10 @@ These extra field macros should allow more concise/DRY definition of multiple Mo
 
 Tower fields is the result of a discussion at: [Tower issue 68](https://github.com/viatropos/tower/issues/68#issuecomment-4992706)
 
+*Note:* The intention of this plugin is also to be a simple demonstration of how to contribute to Tower with plugins/extensions in the form of Node modules, which extend Tower objects with extra functionality.
+
+The following field-type macros are included:
+
 * id
 * arrays
 * bigDecimals
@@ -17,7 +21,7 @@ Tower fields is the result of a discussion at: [Tower issue 68](https://github.c
 * strings
 * times
 
-The following code example illustrates the use of these type specific macros.
+The following Model illustrates the use of these field-type macros.
 
 ``` coffeescript
 class App.User extends Tower.Model
@@ -43,7 +47,7 @@ class App.User extends Tower.Model
     admin:            type: 'Boolean', default: false
 ```
 
-You can also pass a list of strings that are the field names, where the options hash is then shared by all those fields. If no options hash is given, the fields default to the default type of Tower fields (same as using the `field` macro without a type: option).
+You can also pass a list of strings that are the field names. The options hash is then shared by all those fields.
 
 ``` coffeescript
 # Define multiple at a time
@@ -54,4 +58,4 @@ class App.User extends Tower.Model
   @fields 'active', 'admin',  type: 'Boolean', default: false 
 ``` 
 
-You should avoid to mix too many variants of field definitions in your model as it will reduce code readability. As always, use great power with care!
+*Important:* You should avoid to mix too many variants of field definitions in your model as it will reduce code readability. As always, use great power with care!
