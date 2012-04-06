@@ -1,7 +1,7 @@
 {
   "name":                 "tower_fields",
   "version":              "0.1.0",
-  "description":          "Tower Model class methods for defining multiple fields",
+  "description":          "Tower plugin - define multiple Model fields using powerful field macros",
   "homepage":             "https://github.com/kristianmandrup",
   "main":                 "lib/tower_fields.js",
   "author":               "Kristian Mandrup <kmandrup@gmail.com>",
