@@ -3,6 +3,8 @@
 This plugin attempts to extend the `Tower.Model.Attributes` object with some Class methods.
 These extra field macros should allow more concise/DRY definition of multiple Model fields in one go, especially when the fields share the same type.
 
+Tower fields is the result of a discussion at: [Tower issue 68](https://github.com/viatropos/tower/issues/68#issuecomment-4992706)
+
 * id
 * arrays
 * bigDecimals
